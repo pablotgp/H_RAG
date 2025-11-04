@@ -1,0 +1,17 @@
+# Archivo para ignorar ficheros en Git
+
+# 1. Archivos de entorno que contienen claves secretas
+.env
+
+# 2. Archivos de datos generados. Son grandes y se pueden
+#    recrear ejecutando el notebook data_processing.ipynb
+*.pkl
+*.index
+
+# 3. Carpetas de caché y sistema de Python y Jupyter/Colab
+__pycache__/
+.ipynb_checkpoints/
+
+# 4. Archivos específicos del sistema operativo (opcional pero buena práctica)
+.DS_Store
+Thumbs.db
