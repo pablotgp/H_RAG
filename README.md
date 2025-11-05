@@ -9,7 +9,7 @@
 
 ---
 <p align="center">
-  <img src="assets/app_demo.gif" alt="App Demo GIF" width="800"/>
+  <img src="Research_TFM/assets/app_demo.gif" alt="App Demo GIF" width="800"/>
 </p>
 
 ---
@@ -134,21 +134,21 @@ Crea un archivo `.env` en la raíz del proyecto (puedes usar `app/src/.env_examp
 ```
 High-Precision-RAG-System/
 │
-├── app/                          # Contenido de la aplicación Streamlit.
-│   ├── src/                      # Lógica del backend RAG.
-│   ├── app.py                    # Punto de entrada de la aplicación.
-│   └── (otros archivos...)
+├── App/                          # Contenido de la aplicación Streamlit.
+│   ├── data/                     # Documentos PDF para usar en la aplicación.
+│   ├── index/                    # Índices vectoriales generados por la aplicación.
+│   ├── src/                      # Lógica del backend RAG (procesamiento, retrieval, etc.).
+│   ├── .env_example              # Plantilla para las variables de entorno de la app.
+│   ├── app.py                    # Punto de entrada para la interfaz web con Streamlit.
+│   └── main.py                   # Interfaz de línea de comandos (CLI) para la app.
 │
-├── research_TFM/                 # Material completo del Trabajo de Fin de Máster.
-│   ├── TFM_Pablo_Garcia_Pastor.pdf # Documento completo de la investigación.
-│   ├── data/                     # Corpus de documentos PDF utilizado.
-│   ├── evaluation_datasets/      # Contiene la evaluación CUALITATIVA MANUAL (puntuaciones)
+├── Research_TFM/                 # Material completo del Trabajo de Fin de Máster.
 │   ├── assets/                   # Gráficos y visualizaciones para el README.
-│   ├── RAG.ipynb                 # Notebook de preprocesamiento, implementación y evaluación.
-│   └── (otros scripts...)
+│   ├── data/                     # Corpus de documentos PDF utilizado en la investigación.
+│   ├── evaluation_datasets/      # Contiene la evaluación CUALITATIVA MANUAL (puntuaciones).
+│   └── TFM.pdf                   # Documento completo de la investigación (.pdf).
 │
-├── .gitignore                    # Archivos a ignorar por Git.
-├── LICENSE                       # Licencia del proyecto (MIT).
+├── .gitignore                    # Archivos y carpetas a ignorar por Git.
 ├── README.md                     # Este archivo.
 └── requirements.txt              # Dependencias de Python para todo el proyecto.
 ```
