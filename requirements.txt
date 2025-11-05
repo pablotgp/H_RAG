@@ -1,0 +1,32 @@
+
+
+
+
+# ==============================================================================
+#  Requisitos para el Proyecto RAG
+#  Este archivo contiene la lista mínima de dependencias necesarias.
+#  Instalar con: pip install -r requirements.txt
+# ==============================================================================
+
+# --- Gestión del Entorno y Configuración ---
+python-dotenv==1.0.1          # Para cargar variables de entorno desde el archivo .env (API keys)
+
+# --- Procesamiento de Datos y Documentos ---
+PyMuPDF==1.24.1               # Para extraer texto de archivos PDF (fitz). Es el paquete correcto.
+nltk==3.8.1                   # Para la tokenización por frases (chunking)
+
+# --- Búsqueda y Retrieval (Vector Store y Reranking) ---
+numpy==1.26.4                 # Dependencia fundamental para operaciones numéricas. Usamos una versión estable.
+faiss-cpu==1.8.0              # Vector store para la búsqueda de similitud (versión para CPU)
+rank_bm25==0.2.2              # Para la búsqueda por palabras clave (sparse retrieval)
+sentence-transformers==2.7.0  # Para el modelo de re-ranking (CrossEncoder)
+# NOTA: sentence-transformers instalará automáticamente las versiones correctas de 'torch' y 'transformers'.
+
+# --- Integración con LLMs y LangChain ---
+langchain==0.1.20             # El paquete principal de LangChain
+langchain-core==0.1.52        # Abstracciones principales y LangChain Expression Language (LCEL)
+langchain-openai==0.1.6       # Integración específica para los modelos de OpenAI
+          # NOTA: langchain-openai instalará automáticamente la versión correcta de 'tiktoken'.
+
+# --- Interfaz de Usuario ---
+streamlit==1.35.0
