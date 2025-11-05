@@ -3,6 +3,9 @@
 import streamlit as st
 import os
 import time
+# --- MODIFICACIÓN CLAVE PARA CORREGIR IMPORTACIONES ---
+# Añade la carpeta 'app' al path de Python para que encuentre el paquete 'src'
+sys.path.append(os.path.abspath('app'))
 
 # --- Importaciones del Backend RAG ---
 try:
