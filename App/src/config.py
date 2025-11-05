@@ -10,13 +10,13 @@ load_dotenv()
 #  1. RUTAS DE DIRECTORIOS (Ahora son genéricas)
 # ==============================================================================
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Definimos la raíz de la aplicación, que es 'app'
+APP_ROOT = "app" 
 
-# Directorio que contiene TODOS los archivos PDF
-DATA_DIR = os.path.join(PROJECT_ROOT, "data")
+# Las rutas a los datos y los índices ahora se construyen a partir de esta raíz
+DATA_DIR = os.path.join(APP_ROOT, "data")
+INDEX_PARENT_DIR = os.path.join(APP_ROOT, "index")
 
-# Directorio PADRE que contendrá las subcarpetas de los índices para cada PDF
-INDEX_PARENT_DIR = os.path.join(PROJECT_ROOT, "index")
 
 # ==============================================================================
 #  2. CLAVES DE API Y CONFIGURACIÓN DE MODELOS
