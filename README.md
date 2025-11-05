@@ -70,15 +70,15 @@ A continuación se presentan algunos de los gráficos más representativos del T
 
 **Figura 7.1: Puntuación Cualitativa General Promedio por LLM y Asignatura**
 *Rendimiento general de cada modelo en los diferentes dominios temáticos, evidenciando su consistencia.*
-![Puntuación Cualitativa General por Asignatura](research_TFM/assets/puntuacion_cualitativa.png)
+![Puntuación Cualitativa General por Asignatura](Research_TFM/assets/puntuacion_cualitativa.png)
 
 **Figura 7.2: Número Total de Alucinaciones por LLM y Asignatura**
 *Incidencia de alucinaciones (generación de información incorrecta) para cada modelo, una métrica clave de fiabilidad.*
-![Número de Alucinaciones por Asignatura](research_TFM/assets/Alucinaciones.png)
+![Número de Alucinaciones por Asignatura](Research_TFM/assets/Alucinaciones.png)
 
 **Figura 7.3: Coste Total Acumulado del Experimento (USD)**
 *Coste económico total para ejecutar las 72 tareas con cada modelo, destacando la eficiencia de los modelos de código abierto.*
-![Coste Total Acumulado](research_TFM/assets/Coste.png)
+![Coste Total Acumulado](Research_TFM/assets/Coste.png)
 
 ### Conclusiones de la Investigación
 -   **GPT-4o**: El **líder en calidad y fiabilidad**, ideal si el rendimiento es crítico y el coste secundario.
