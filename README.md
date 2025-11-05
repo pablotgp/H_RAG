@@ -9,7 +9,9 @@
 
 ---
 <p align="center">
-  <img src="Research_TFM/assets/app_demo.gif" alt="App Demo GIF" width="800"/>
+  <img src="Research_TFM/assets
+/asistente academico.gif
+" alt="App Demo GIF" width="800"/>
 </p>
 
 ---
